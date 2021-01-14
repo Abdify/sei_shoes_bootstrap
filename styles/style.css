@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+/* Texts */
+
+h1 {
+  font-size: 5rem;
+  color: #49413e;
+}
+h2 {
+  font-size: 3rem;
+  margin: 1.5rem 0;
+}
+h3 {
+  font-size: 2rem;
+}
+h1,
+h2,
+h3 {
+  font-family: "Bebas Neue", cursive;
+}
+.price {
+  font-size: 3rem;
+  color: tomato;
+}
+
+/* Buttons */
+.buy_now_btn {
+  border: none;
+  border-radius: 10px;
+  background-image: linear-gradient(180deg, tomato 0%, rgb(231, 84, 58) 100%);
+  width: 40%;
+  height: 60px;
+  color: white;
+  transition: 0.5s all ease;
+}
+.buy_now_btn:hover {
+  transform: scale(1.1);
+}
+
+/* Sections */
+
+section {
+  margin-bottom: 100px;
+}
+
+header,
+.top_banner {
+  background-color: #fff9f4;
+}
+
+.card_box {
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+.card_image {
+  margin: 1rem;
+  border-radius: 20px;
+}
+.card_footer {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.features_box {
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.features .col-lg-5 img {
+  width: 20%;
+}
+.features .col-lg-7 img {
+  width: 85%;
+}
+
+.flash_sale span {
+  animation: highlight 1s ease 1s infinite alternate-reverse;
+}
+@keyframes highlight {
+  from {
+    text-shadow: 0;
+  }
+  to {
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+      0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+      0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+      0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+      0 20px 20px rgba(0, 0, 0, 0.15);
+      /* Learnt this shadow effect form codepen */
+  }
+}
+
+/*--------------- Responsive --------------------- */
+@media (max-width: 768px) {
+  h2 {
+    text-align: center;
+  }
+  .navbar img {
+    width: 75% !important;
+  }
+  .top_banner .row,
+  .features_row {
+    flex-direction: column-reverse;
+  }
+  .flash_sale_img {
+    width: 50% !important;
+  }
+
+  .features .col-lg-7 img {
+    margin-left: 0 !important;
+    margin-right: auto;
+  }
+  .features_box {
+    flex-direction: column;
+    margin-right: 0 !important;
+    text-align: center;
+    padding: 0 !important;
+  }
+  .features_text {
+    padding: 20px;
+    width: 100% !important;
+  }
+}
+
+
+@media (max-width: 992px) {
+    .banner_img{
+        width: 100%!important;
+    }
+
+}
